@@ -21,34 +21,45 @@ install.packages("tidyverse")
 ## Usage
 
 ``` r
+library(tidyverse)
+library(extrafont)
+library(palmerpenguins)
 library(higheReducation)
-library(ggplot2)
 
-# Example plot using theme_taso
-ggplot(mtcars, aes(wt, mpg, color = factor(gear))) + 
-  geom_point(size = 4) + 
-  theme_taso() + 
-  labs(title = "This is my title", 
-       subtitle = "This is my subtitle", 
-       caption = "This is my caption") + 
-  scale_y_continuous(expand = c(0, 0)) +
-  scale_x_continuous(expand = c(0, 0)) + 
-  scale_colour_taso()
+# Bar chart example 
 
-# Accessing the colour palette
-tasocolours
+ggplot(penguins, aes(x = sex, fill = species)) +
+  geom_bar(alpha = 0.8) +
+  scale_fill_manual(values = c("#3b66bc","#07ddb3","#f9466c"), guide = "none") + 
+  theme_taso() +
+  facet_wrap(~species, ncol = 1) +
+  coord_flip() + 
+  scale_y_continuous(expand = c(0,0)) + 
+  labs(title = "Count of penguins for each species/sex",
+       caption = "Source: palmerpenguins package")
 
-# Another example plot using theme_taso 
-ggplot(mtcars, aes(factor(cyl))) + 
-  geom_bar(fill = "#3b66bc") +  # tasoblue color
-  theme_taso() + 
-  theme(axis.title.x = element_text()) +
-  labs(title = "Distribution of Cylinders",
-       subtitle = "Using TASO custom color palette",
-       x = "Number of Cylinders",
-       y = "Count",
-       caption = "Source: mtcars dataset") + 
-  scale_y_continuous(expand = c(0, 0))
+# Scatterplot example: penguin bill length versus bill depth
+ggplot(data = penguins, aes(x = species, y = bill_length_mm)) +
+  theme_taso() +
+  geom_jitter(aes(color = species),
+              width = 0.1, 
+              alpha = 0.7,
+              show.legend = FALSE) +
+  scale_color_manual(values = c("#3b66bc","#07ddb3","#f9466c")) + 
+  labs(title = "Bill length of different penguin species", 
+       caption = "Source: palmerpenguins package")
+
+# Histogram example: flipper length by species
+ggplot(data = penguins, aes(x = flipper_length_mm)) +
+  theme_taso() +
+  geom_histogram(aes(fill = species), alpha = 0.5, position = "identity") +
+  scale_fill_manual(values = c("#3b66bc","#07ddb3","#f9466c")) +
+  scale_y_continuous(expand = c(0,0)) + 
+  scale_x_continuous(expand = c(0,0)) + 
+  labs(title = "Count of flipper length by different penguin species",
+       x = "Flipper length", 
+       caption = "Source: palmerpenguins package") + 
+  theme(axis.title.x = element_text())
 ```
 
 The colour palette includes:
