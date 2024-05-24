@@ -2,10 +2,10 @@ Package: higheReducation
 Type: Package
 Title: TASO R Higher Education Theme and Colour Palette
 Version: 0.1.0
-Author: Your Name
-Maintainer: Your Name <your.email@example.com>
-Description: A package to apply a custom theme and colour palette in ggplot2 for TASO-related visualizations in higher education.
-License: MIT
+Author: Luke Arundel
+Maintainer: Luke Arundel, luke.arundel@taso.org.uk
+Description: A package to apply a custom theme and colour palette in ggplot2 for TASO-related visualisations.
+License: CC-BY-NC 4.0
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.1
