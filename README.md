@@ -38,7 +38,7 @@ ggplot(penguins, aes(x = sex, fill = species)) +
   labs(title = "Count of penguins for each species/sex",
        caption = "Source: palmerpenguins package")
 
-# Scatterplot example: penguin bill length versus bill depth
+# Jitter plot example: bill length by species
 ggplot(data = penguins, aes(x = species, y = bill_length_mm)) +
   theme_taso() +
   geom_jitter(aes(color = species),
