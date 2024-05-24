@@ -1,2 +1,6 @@
+export(required_packages)
 export(theme_taso)
 export(taso_colours)
+export(scale_colour_taso)
+export(taso_pal)
+export(tasocolours)

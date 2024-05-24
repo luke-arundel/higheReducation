@@ -7,10 +7,10 @@
 theme_taso()
 }
 \value{
-A ggplot2 theme object
+A ggplot2 theme object.
 }
 \description{
-Apply Taso Theme to ggplot2
+This function applies the Taso theme to ggplot2 plots.
 }
 \examples{
 library(ggplot2)

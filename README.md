@@ -1,6 +1,6 @@
 # higheReducation
 
-`higheReducation` is an R package that provides a custom ggplot2 theme and colour palette for TASO-related visualisations in higher education.
+`higheReducation` is an R package that provides a custom ggplot2 theme and colour palette for TASO-related visualisations.
 
 ## Installation
 
