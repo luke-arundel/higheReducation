@@ -8,7 +8,7 @@ You can install the package from GitHub:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("yourusername/higheReducation")
+devtools::install_github("luke-arundel/higheReducation")
 ```
 
 ## Usage
