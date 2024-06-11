@@ -1,6 +1,6 @@
 # higheReducation
 
-`higheReducation` is an R package that provides a custom ggplot2 theme and colour palette for TASO-related visualisations.
+`higheReducation` is an R package by Luke Arundel that provides a custom ggplot2 theme and colour palette for TASO-related visualisations.
 
 ## Installation
 
@@ -8,7 +8,7 @@ You can install the package from GitHub:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("luke-arundel/higheReducation")
+devtools::install_github("taso-he/higheReducation")
 ```
 
 To install this package, you need to have `extrafont` and `tidyverse` installed. You can install them using the following commands:
