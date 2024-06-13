@@ -64,14 +64,14 @@ ggplot(data = penguins, aes(x = flipper_length_mm)) +
 
 The colour palette includes:
 
--   tasoteal = "#07dbb3"
+-   **tasoteal** = "#07dbb3"
 
--   tasoblue = "#3b66bc"
+-   **tasoblue** = "#3b66bc"
 
--   tasogrey = "#e4e2d9"
+-   **tasogrey** = "#e4e2d9"
 
--   tasolightgrey = "#edebe3"
+-   **tasolightgrey** = "#edebe3"
 
--   tasopink = "#f9466c"
+-   **tasopink** = "#f9466c"
 
--   tasodarkgrey = "#485866"
+-   **tasodarkgrey** = "#485866"
